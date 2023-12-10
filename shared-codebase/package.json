@@ -1,0 +1,16 @@
+{
+  "version": "0.0.0",
+  "name": "app",
+  "main": "index.ts",
+  "dependencies": {
+    "@react-navigation/native": "6.9.17",
+    "@react-navigation/native-stack": "6.9.17",
+    "@tamagui/config": "1.79.2",
+    "@shopify/react-native-skia": "0.1.208",
+    "react-native-reanimated": "3.3.0",
+    "moti": "0.2.4",
+    "solito": "4.1.3",
+    "tamagui": "1.79.2"
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "SchmacktendApp",
+    "slug": "schmacktend-app",
+    "version": "1.0.0",
+    "scheme": "schmacktend-app",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.schmacktend.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e725d1ee-48b3-4e73-a554-ca42913dbb78"
+      }
+    },
+    "android": {
+      "package": "com.schmacktend.app"
+    }
+  }
+}

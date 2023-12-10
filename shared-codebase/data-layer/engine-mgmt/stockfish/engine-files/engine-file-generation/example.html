@@ -1,0 +1,14 @@
+<script data-id="stockfish-script" src="stockfish.js"></script>
+<script src="stockfish.wasm.js"></script>
+<script>
+	(async() => {
+		const module = document.querySelector('script[data-id="stockfish-script"]')._exports;
+		const wasmBinary = Uint8Array.from(atob(window.stockfishwasm), c => c.charCodeAt(0))
+		const stockfish = await new module({'wasmBinary': wasmBinary});
+		stockfish.onmessage = e => console.log(e);
+		stockfish.postCustomMessage = data => stockfish.onCustomMessage(data);
+		stockfish.postCustomMessage('ucinewgame');
+		stockfish.postCustomMessage(`isready`);
+		stockfish.postCustomMessage(`go depth 10`);
+	})();
+</script>

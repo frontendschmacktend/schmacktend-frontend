@@ -1,0 +1,30 @@
+{
+  "name": "SchmacktendApp",
+  "private": true,
+  "workspaces": [
+    "platforms/*",
+    "shared/*"
+  ],
+  "devDependencies": {
+    "@shopify/react-native-skia": "0.1.208",
+    "@types/react": "18.2.39",
+    "@types/react-native": "0.72.7",
+    "eslint": "8.54.0",
+    "react-native-reanimated": "3.3.0",
+    "turbo": "1.10.16",
+    "typescript": "5.3.2"
+  },
+  "scripts": {
+    "native:ios": "cd platforms/expo && npx expo run:ios",
+    "native:android": "cd platforms/expo && npx expo run:android",
+    "web": "cd platforms/next && yarn next"
+  },
+  "packageManager": "yarn@3.4.1",
+  "dependencies": {
+    "@tamagui/config": "1.79.2",
+    "chess.js": "1.0.0-beta.6",
+    "react-native-chessboard": "0.1.2",
+    "solito": "4.1.3",
+    "tamagui": "1.79.2"
+  }
+}

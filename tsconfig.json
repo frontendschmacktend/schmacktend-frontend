@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "jsx": "react",
+    "jsx": "react",
+    "jsx": "react",
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "shared-codebase/*": ["./shared-codebase/*"]
+    }
+  },
+  "extends": "expo/tsconfig.base"
+}

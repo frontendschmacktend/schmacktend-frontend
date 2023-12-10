@@ -1,0 +1,21 @@
+<script data-id="stockfish-script" src="/shared-codebase/data-layer/engine-mgmt/stockfish/engine-files/stockfish.js"></script>
+<script src="/shared-codebase/data-layer/engine-mgmt/stockfish/engine-files/stockfish.wasm.js"></script>
+<script>
+	(async() => {
+		window.addEventListener("message", async (message) => {
+			data = JSON.parse(message.data);
+			const module = document.querySelector('script[data-id="stockfish-script"]')._exports;
+			const wasmBinary = Uint8Array.from(atob(window.stockfishwasm), c => c.charCodeAt(0))
+			const stockfish = await new module({'wasmBinary': wasmBinary});
+			stockfish.postCustomMessage = data => stockfish.onCustomMessage(data);
+			stockfish.postCustomMessage('ucinewgame');
+			stockfish.postCustomMessage(`isready`);
+			stockfish.postCustomMessage(`setoption name MultiPV value ${data.multipv}`);
+			stockfish.postCustomMessage(`position fen ${data?.fen}`);
+			stockfish.postCustomMessage(`go depth ${data.depth}`);
+			stockfish.addMessageListener((msg)=>{
+				window.ReactNativeWebView.postMessage('Stockfish 2:' + msg); //output
+			});
+		});
+	})();
+</script>
