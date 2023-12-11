@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import StockfishWeb from '../../../../shared-codebase/data-layer/engine-mgmt/stockfish/StockfishSingleThreaded_Web'
+// import StockfishWeb from '../../../../shared-codebase/data-layer/engine-mgmt/stockfish/StockfishSingleThreaded_Web'
 
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
 
   return (
     <>
-        <StockfishWeb />
+        {/* <StockfishWeb /> */}
         {/* <LazyComponent /> */}
     </>
   )
