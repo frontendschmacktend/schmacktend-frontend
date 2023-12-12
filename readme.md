@@ -1,13 +1,4 @@
-## 🔦 Info for the error we're trying to solve:
-- Start from the root folder: yarn install
-  - This will install the packages from all 4 package.json files (root folder, packages/next, packages/expo, shared-codebase)
-- Then check if the dev build of next.js is working, again from root foler: yarn run web
-  - This will run the dev build of next.js where you can go to localhost:3000 and click Skia to see it working
-- Then step into platforms/next from your terminal and run: yarn run build
-  - This will build a production version of the next.js setup
-- Step back to the root folder and run: yarn web-build
-  - This will start the production build we just generated but when you go to localhost:3000 it shows the errors below on an endless loop:
-<img width="1721" alt="Screenshot 2023-12-12 at 12 59 47 AM" src="https://github.com/frontendschmacktend/schmacktend-frontend/assets/153449693/09a544c4-9b8b-4955-8e70-2b77af07b07f">
+## 🔦 Issue FIXED (for now)!
 
 ## 🔦 About
 
