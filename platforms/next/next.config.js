@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const { withExpo } = require('@expo/next-adapter')
 const { withTamagui } = require('@tamagui/next-plugin')
 const { join } = require('path')
 
@@ -43,12 +44,16 @@ module.exports = function () {
     },
     transpilePackages: [
       'solito',
+      'react-native',
       'react-native-web',
       'expo-linking',
+      'moti',
       'expo-constants',
       'expo-modules-core',
-      "@shopify/react-native-skia",
-      "react-native-reanimated"
+      'react-native',
+      '@shopify/react-native-skia',
+      'react-native-reanimated',
+      'react-native-gesture-handler',
     ],
     experimental: {
       /*
@@ -73,5 +78,5 @@ module.exports = function () {
     }
   }
 
-  return config
+  return withExpo(config)
 }
