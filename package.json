@@ -17,7 +17,8 @@
   "scripts": {
     "native:ios": "cd platforms/expo && npx expo run:ios",
     "native:android": "cd platforms/expo && npx expo run:android",
-    "web": "cd platforms/next && yarn next"
+    "web-dev": "cd platforms/next && yarn next",
+    "web-build": "cd platforms/next && yarn start"
   },
   "packageManager": "yarn@3.4.1",
   "dependencies": {

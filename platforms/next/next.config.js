@@ -47,6 +47,8 @@ module.exports = function () {
       'expo-linking',
       'expo-constants',
       'expo-modules-core',
+      "@shopify/react-native-skia",
+      "react-native-reanimated"
     ],
     experimental: {
       /*
