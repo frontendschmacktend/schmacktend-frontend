@@ -9,7 +9,7 @@ import {
       <>
          <WithSkiaWeb
          opts={{ locateFile: (file) => `https://cdn.jsdelivr.net/npm/canvaskit-wasm@0.38.0/bin/full/${file}` }}
-         getComponent={() => import('../../../../shared-codebase/logic-layer/components/HelloWorld')}
+         getComponent={() => import('../../../shared-codebase/logic-layer/components/HelloWorld')}
          fallback={<Paragraph style={{display:"flex",justifyContent:"center"}}>Loading Skia...</Paragraph>} />
       </>
     )

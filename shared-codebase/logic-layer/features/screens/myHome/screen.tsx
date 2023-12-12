@@ -1,10 +1,10 @@
 import React from 'react';
-import Page from '../../../../../platforms/next/pages/Canvas/index'
+import CanvasPage from '../../../../../platforms/next/skia/components/Canvas'
 
 export function MyHomeScreen() {
   return (
     <>
-      <Page />
+      <CanvasPage />
     </>
   )
 }

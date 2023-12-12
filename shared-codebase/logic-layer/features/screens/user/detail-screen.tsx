@@ -1,7 +1,10 @@
-import React from 'react';
-import HelloWorld from '../../../components/HelloWorld';
+import React from 'react'
+import CanvasPage from '../../../../../platforms/next/skia/components/Canvas'
+
 export function UserDetailScreen() {
-  return(
-    <HelloWorld />
+  return (
+    <>
+      <CanvasPage />
+    </>
   )
 }
