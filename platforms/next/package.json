@@ -11,13 +11,11 @@
   "dependencies": {
     "@babel/plugin-proposal-export-namespace-from": "7.18.9",
     "@expo/next-adapter": "5.0.2",
-    "@shopify/react-native-skia": "0.1.208",
-    "@tamagui/next-plugin": "1.79.2",
-    "@tamagui/next-theme": "1.79.2",
+    "@tamagui/config": "latest",
+    "@tamagui/next-theme": "latest",
     "app": "*",
     "next": "13.4.19",
     "raf": "3.4.1",
-    "react-native-reanimated": "3.3.0",
     "setimmediate": "1.0.5"
   },
   "browser": {
@@ -26,6 +24,7 @@
     "path": false
   },
   "devDependencies": {
+    "@tamagui/next-plugin": "latest",
     "@types/node": "17.0.21",
     "eslint-config-next": "13.2.0"
   }
